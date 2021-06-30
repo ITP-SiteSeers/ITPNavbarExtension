@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "ITP Navbar Test",
+  "description": "Method to test navbar for Chrome",
+  "version": "0.2.1",
+  "author": "NYU ITP SiteSeers",
+  "content_scripts":[
+    {
+      "matches": [
+        "https://itp.nyu.edu/help/*",
+        "https://itp.nyu.edu/camp2021/*",
+        "https://itp.nyu.edu/itp/people/*",
+        "https://itp.nyu.edu/redburnsfund/*"
+      ],
+      "css": ["style.css"],
+      "js": ["script.js"]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["contentScript.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "action": {
+    "default_icon": {              
+      "16": "img/icon/Icon16.png",   
+      "24": "img/icon/Icon24.png",   
+      "32": "img/icon/Icon32.png"    
+    },
+    "default_title": "ITP Navbar Test"
+  }
+}

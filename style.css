@@ -1,0 +1,7 @@
+#new-itp-header {
+  width: 100%;
+  height: calc(3.5vh + 1.5vw);
+  background-color: hsl(0, 0%, 16%);
+  position: relative;
+  z-index: 1000;
+}
