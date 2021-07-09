@@ -15,8 +15,8 @@ webpageScript.onload = function () {
 (document.head || document.documentElement).appendChild(contentScript);
 (document.head || document.documentElement).appendChild(webpageScript);
 
-// window.addEventListener('DOMContentLoaded', () => {
-//   const tischLogo = chrome.runtime.getURL(`img/TischLogo.svg`);
-//   const tischLogoDOM = document.getElementById(`tisch-logo`);
-//   tischLogoDOM.src = tischLogo;
-// });
+const font = new FontFace(
+  'Gotham',
+  chrome.runtime.getURL('fonts/GothamPro.woff2')
+);
+document.fonts.add(font);
