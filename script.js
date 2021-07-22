@@ -1,8 +1,22 @@
 // Solution to allow for access to webpage context
 // Through injecting script tag
-var s = document.createElement('script');
-s.src = chrome.runtime.getURL('contentScript.js');
-s.onload = function () {
+const contentScript = document.createElement('script');
+contentScript.src = chrome.runtime.getURL('contentScript.js');
+contentScript.onload = function () {
   this.remove();
 };
-(document.head || document.documentElement).appendChild(s);
+
+const webpageScript = document.createElement('script');
+webpageScript.src = chrome.runtime.getURL('webpageScript.js');
+webpageScript.onload = function () {
+  this.remove();
+};
+
+(document.head || document.documentElement).appendChild(contentScript);
+(document.head || document.documentElement).appendChild(webpageScript);
+
+const font = new FontFace(
+  'Gotham',
+  chrome.runtime.getURL('Gotham-Font/Gotham-Black.woff2')
+);
+document.fonts.add(font);
