@@ -25,14 +25,138 @@ const headerDOM = [
       EXPLORE
     </button>
   </div>
-  <menu id="bottom-bar" class="dropdown-content">
-    <ul>
-      <li><a href="https://itp.nyu.edu">ITP</a></li>
-      <li><a href="https://itp.nyu.edu/ima">IMA</a></li>
-      <li><a href="https://itp.nyu.edu/lowres">LowRes</a></li>
-      <li><a href="https://itp.nyu.edu/camp">Camp</a></li>
-      <li><a href="https://itp.nyu.edu/help">Help</a></li>
-    </ul>
+  <menu id="bottom-bar">
+    <div id="bottom-header">
+      <span id="bottom-header-bold">Navigate</span>
+      <span id="bottom-header-normal">Interactive...</span>
+    </div>
+    <div id="bottom-bar-col-container">
+      <div class="bottom-bar-col" id="bottom-bar-left-col">
+
+          <div class="bottom-bar-link-container">
+          <div class="bottom-bar-link-header">
+            <svg class="bottom-bar-link-icon" src="">
+            <div class="bottom-bar-link-title">Prospective Students</div>
+          </div>
+          <div class="bottom-bar-link-parent">
+            <div class="bottom-bar-link-col bottom-bar-link-left-col">
+              <a class="bottom-bar-link" href="#">IMA Info</a>
+              <a class="bottom-bar-link" href="#">ITP Info</a>
+            </div>
+            <div class="bottom-bar-link-col bottom-bar-link-right-col">
+              <a class="bottom-bar-link" href="#">Low Res Info</a>
+              <a class="bottom-bar-link" href="#">ITP Camp Info</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bottom-bar-link-container">
+          <div class="bottom-bar-link-header">
+          <svg class="bottom-bar-link-icon" src=""/>
+            <div class="bottom-bar-link-title">Academic Resources</div>
+          </div>
+          <div class="bottom-bar-link-parent">
+            <div class="bottom-bar-link-col bottom-bar-link-left-col">
+              <a class="bottom-bar-link" href="#">Courses</a>
+              <a class="bottom-bar-link" href="#">Registration</a>
+            </div>
+            <div class="bottom-bar-link-col bottom-bar-link-right-col">
+              <a class="bottom-bar-link" href="#">Academic Policies</a>
+              <a class="bottom-bar-link" href="#">Academic Calendar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-bar-link-container">
+          <div class="bottom-bar-link-header">
+          <svg class="bottom-bar-link-icon" src=""/>
+            <div class="bottom-bar-link-title">Floor Resources</div>
+          </div>
+          <div class="bottom-bar-link-parent">
+            <div class="bottom-bar-link-col bottom-bar-link-left-col">
+              <a class="bottom-bar-link" href="#">Overview</a>
+              <a class="bottom-bar-link" href="#">Shop</a>
+            </div>
+            <div class="bottom-bar-link-col bottom-bar-link-right-col">
+              <a class="bottom-bar-link" href="#">Equipment</a>
+              <a class="bottom-bar-link" href="#">Micro Studios</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-bar-link-container">
+          <div class="bottom-bar-link-header">
+          <svg class="bottom-bar-link-icon" src=""/>
+            <div class="bottom-bar-link-title">Career Resources</div>
+          </div>
+          <div class="bottom-bar-link-parent">
+            <div class="bottom-bar-link-col bottom-bar-link-left-col">
+              <a class="bottom-bar-link" href="#">Handshake</a>
+              <a class="bottom-bar-link" href="#">Alumni Net</a>
+            </div>
+            <div class="bottom-bar-link-col bottom-bar-link-right-col">
+              <a class="bottom-bar-link" href="#">ITP Opportunities</a>
+              <a class="bottom-bar-link" href="#">Wasserman Center</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-bar-link-container">
+          <div class="bottom-bar-link-header">
+          <svg class="bottom-bar-link-icon" src=""/>
+            <div class="bottom-bar-link-title">Student Life</div>
+          </div>
+          <div class="bottom-bar-link-parent">
+            <div class="bottom-bar-link-col bottom-bar-link-left-col">
+              <a class="bottom-bar-link" href="#">Events</a>
+              <a class="bottom-bar-link" href="#">Un-Hallway</a>
+            </div>
+            <div class="bottom-bar-link-col bottom-bar-link-right-col">
+              <a class="bottom-bar-link" href="#">Projects Database</a>
+              <a class="bottom-bar-link" href="#">People Directory</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="bottom-bar-col" id="bottom-bar-right-col">
+
+          <div class="bottom-bar-link-container">
+            <div class="bottom-bar-link-header">
+            <svg class="bottom-bar-link-icon" src=""/>
+              <div class="bottom-bar-link-title">Getting Help</div>
+            </div>
+            <div class="bottom-bar-link-parent">
+              <div class="bottom-bar-link-col bottom-bar-link-left-col">
+                <a class="bottom-bar-link" href="#">ITP/IMA Help</a>
+                <a class="bottom-bar-link" href="#">Office Hours</a>
+              </div>
+              <div class="bottom-bar-link-col bottom-bar-link-right-col">
+                <a class="bottom-bar-link" href="#">Coding Lab</a>
+                <a class="bottom-bar-link" href="#">Design Lab</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom-bar-link-container">
+          <div class="bottom-bar-link-header">
+          <svg class="bottom-bar-link-icon" src=""/>
+            <div class="bottom-bar-link-title">Community</div>
+          </div>
+          <div class="bottom-bar-link-parent">
+            <div class="bottom-bar-link-col bottom-bar-link-left-col">
+              <a class="bottom-bar-link" href="#">Event Calendar</a>
+              <a class="bottom-bar-link" href="#">Submit Ideas</a>
+            </div>
+            <div class="bottom-bar-link-col bottom-bar-link-right-col">
+              <a class="bottom-bar-link" href="#">Red Burns Fund</a>
+              <a class="bottom-bar-link" href="#">Department News</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </menu>
   
   `,

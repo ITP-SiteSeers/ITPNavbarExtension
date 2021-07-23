@@ -1,3 +1,46 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/GothamPro-Medium.ttf')
+    format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/GothamPro-MediumItalic.ttf')
+    format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/GothamPro-Bold.ttf')
+    format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/GothamPro-BoldItalic.ttf')
+    format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/GothamPro-Black.ttf')
+    format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/GothamPro-BlackItalic.ttf')
+    format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
 #new-itp-header {
   width: 100%;
   position: relative;
@@ -70,47 +113,87 @@
 .nav-1 #explore-button:active {
   letter-spacing: 3px;
 }
-/* .nav-1 #dropdown {
-  display: none;
-} */
-/*drop down menu*/
-
-
-/* #E3E5E8 */
-.nav-1 #bottom-bar{
+/* Bottom Bar */
+.nav-1 #bottom-bar {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  z-index: 1000;
+  width: 50rem;
+  min-height: 10vh;
+  background-color: #4e4e4e;
+}
+.nav-1 #bottom-bar #bottom-header {
   width: 100%;
-  background-color: #62a9f0;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  height: 2.4rem;
+  color: #e3e5e8;
+  background-color: #3e3e3e;
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+}
+.nav-1 #bottom-bar #bottom-header-bold {
+  font-weight: 700;
+}
+.nav-1 #bottom-bar #bottom-header-normal {
+  font-weight: 500;
+}
+.nav-1 #bottom-bar #bottom-bar-col-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+.nav-1 #bottom-bar .bottom-bar-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.nav-1 #bottom-bar .bottom-bar-link-container {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.nav-1 #bottom-bar .bottom-bar-link-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 1.6rem;
+}
+.nav-1 #bottom-bar .bottom-bar-link-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.nav-1 #bottom-bar .bottom-bar-link-title {
+  color: #e3e5e8;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding-left: 0.4em;
+}
+.nav-1 #bottom-bar .bottom-bar-link-parent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0.4rem 0.4rem 0 0.4rem;
+}
+.nav-1 #bottom-bar .bottom-bar-link-col {
+  display: flex;
+  flex-direction: column;
+}
+.nav-1 #bottom-bar .bottom-bar-link-left-col {
+  width: 35%;
+}
+.nav-1 #bottom-bar .bottom-bar-link-right-col {
+  width: 60%;
+  margin-left: 5%;
+}
+.nav-1 #bottom-bar .bottom-bar-link {
+  color: #e3e5e8;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.3em;
 }
 
-.nav-1 #bottom-bar ul {
-  width: 60%;
-  height: fit-content;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-}
-.nav-1 #bottom-bar ul li {
-  height: fit-content;
-}
-.nav-1 #bottom-bar ul li a {
-  display: block;
-  color: white;
-  font-size: 1.2rem;
-  line-height: 1.2rem;
-  height: auto;
-  text-decoration: none;
-  width: 10rem;
-  text-align: center;
-  transition: 0.2s;
-}
-.nav-1 #bottom-bar ul li a:hover {
-  letter-spacing: 0.25rem;
-}
 /* ================================================ */
 /* Nav 2 - MTA-inspired dropdown */
 /* ================================================ */
