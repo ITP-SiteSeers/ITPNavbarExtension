@@ -33,7 +33,7 @@ const headerDOM = [
   <menu id="bottom-bar">
     <div id="bottom-header">
       <span id="bottom-header-bold">Navigate</span>
-      <span id="bottom-header-normal">Interactive...</span>
+      <span id="bottom-header-normal">Interactive <span id="typewriter">...</span></span>
     </div>
     <div id="bottom-bar-col-container">
       <div class="bottom-bar-col" id="bottom-bar-left-col">
