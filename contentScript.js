@@ -1,5 +1,10 @@
 const urlRoots = [
   {
+    url: `https://itp.nyu.edu/help/faculty/`,
+    root: `header`,
+    colorScheme: `light`,
+  },
+  {
     url: `https://itp.nyu.edu/help/`,
     root: `.header-main`,
     colorScheme: `dark`,
@@ -20,7 +25,7 @@ const headerDOM = [
   // Option 1
   `
   <div id="top-bar">
-    <img src="https://gist.githubusercontent.com/EthanPrintz/85179b3d35743f2096297982c5aba404/raw/24e1aab8693cde6ff8a04f1079ce0992dcea6c2b/TischLogoWhite.svg" id="tisch-logo" alt="Tisch logo">
+    <img src="https://gist.githubusercontent.com/EthanPrintz/85179b3d35743f2096297982c5aba404/raw/3a09b6b97cd72e9a48b676596aa388cfd1712fe3/TischLogoGrey.svg" id="tisch-logo" alt="Tisch logo">
     <button id="explore-button" onclick="exploreDropDown()">
       EXPLORE
     </button>
@@ -35,7 +40,7 @@ const headerDOM = [
 
           <div class="bottom-bar-link-container">
           <div class="bottom-bar-link-header">
-            <svg class="bottom-bar-link-icon" src="">
+            <img class="bottom-bar-link-icon" src="https://gist.githubusercontent.com/EthanPrintz/23997e2f27468b57408102dfa4e8d60e/raw/2d8de322e6758e8370924651dff552106db2f69f/binocular.svg">
             <div class="bottom-bar-link-title">Prospective Students</div>
           </div>
           <div class="bottom-bar-link-parent">
@@ -52,7 +57,7 @@ const headerDOM = [
         
         <div class="bottom-bar-link-container">
           <div class="bottom-bar-link-header">
-          <svg class="bottom-bar-link-icon" src=""/>
+          <img class="bottom-bar-link-icon" src="https://gist.githubusercontent.com/EthanPrintz/23997e2f27468b57408102dfa4e8d60e/raw/2d8de322e6758e8370924651dff552106db2f69f/globe.svg"/>
             <div class="bottom-bar-link-title">Academic Resources</div>
           </div>
           <div class="bottom-bar-link-parent">
@@ -69,7 +74,7 @@ const headerDOM = [
 
         <div class="bottom-bar-link-container">
           <div class="bottom-bar-link-header">
-          <svg class="bottom-bar-link-icon" src=""/>
+          <img class="bottom-bar-link-icon" src="https://gist.githubusercontent.com/EthanPrintz/23997e2f27468b57408102dfa4e8d60e/raw/2d8de322e6758e8370924651dff552106db2f69f/tools.svg"/>
             <div class="bottom-bar-link-title">Floor Resources</div>
           </div>
           <div class="bottom-bar-link-parent">
@@ -86,7 +91,7 @@ const headerDOM = [
 
         <div class="bottom-bar-link-container">
           <div class="bottom-bar-link-header">
-          <svg class="bottom-bar-link-icon" src=""/>
+          <img class="bottom-bar-link-icon" src="https://gist.github.com/EthanPrintz/23997e2f27468b57408102dfa4e8d60e/raw/2d8de322e6758e8370924651dff552106db2f69f/briefcase.svg"/>
             <div class="bottom-bar-link-title">Career Resources</div>
           </div>
           <div class="bottom-bar-link-parent">
@@ -103,7 +108,7 @@ const headerDOM = [
 
         <div class="bottom-bar-link-container">
           <div class="bottom-bar-link-header">
-          <svg class="bottom-bar-link-icon" src=""/>
+          <img class="bottom-bar-link-icon" src="https://gist.github.com/EthanPrintz/23997e2f27468b57408102dfa4e8d60e/raw/05e4a802be193dbc54056965bf06f1b0b87b4bcb/group.svg"/>
             <div class="bottom-bar-link-title">Student Life</div>
           </div>
           <div class="bottom-bar-link-parent">
@@ -123,12 +128,12 @@ const headerDOM = [
 
           <div class="bottom-bar-link-container">
             <div class="bottom-bar-link-header">
-            <svg class="bottom-bar-link-icon" src=""/>
+            <img class="bottom-bar-link-icon" src="https://gist.github.com/EthanPrintz/23997e2f27468b57408102dfa4e8d60e/raw/05e4a802be193dbc54056965bf06f1b0b87b4bcb/question.svg"/>
               <div class="bottom-bar-link-title">Getting Help</div>
             </div>
             <div class="bottom-bar-link-parent">
               <div class="bottom-bar-link-col bottom-bar-link-left-col">
-                <a class="bottom-bar-link" href="#">ITP/IMA Help</a>
+                <a class="bottom-bar-link" href="#">Help Site</a>
                 <a class="bottom-bar-link" href="#">Office Hours</a>
               </div>
               <div class="bottom-bar-link-col bottom-bar-link-right-col">
@@ -140,7 +145,7 @@ const headerDOM = [
 
           <div class="bottom-bar-link-container">
           <div class="bottom-bar-link-header">
-          <svg class="bottom-bar-link-icon" src=""/>
+          <img class="bottom-bar-link-icon" src="https://gist.github.com/EthanPrintz/23997e2f27468b57408102dfa4e8d60e/raw/05e4a802be193dbc54056965bf06f1b0b87b4bcb/community.svg"/>
             <div class="bottom-bar-link-title">Community</div>
           </div>
           <div class="bottom-bar-link-parent">
@@ -154,6 +159,7 @@ const headerDOM = [
             </div>
           </div>
 
+          <img id="bottom-bar-background-illustration" src="https://gist.github.com/EthanPrintz/23997e2f27468b57408102dfa4e8d60e/raw/05e4a802be193dbc54056965bf06f1b0b87b4bcb/bottom-right.svg">
         </div>
       </div>
     </div>
@@ -238,7 +244,8 @@ console.log(`📦 Container element: ${{ containerNav }}`);
 // Create new nav element
 const newITPHeader = document.createElement(`nav`);
 newITPHeader.id = `new-itp-header`;
-newITPHeader.className = `nav-1`;
+newITPHeader.classList.add(`nav-1`);
+newITPHeader.classList.add(`nav-retracted`);
 console.log(`🎁 New header: ${{ newITPHeader }}`);
 newITPHeader.innerHTML = headerDOM[0];
 

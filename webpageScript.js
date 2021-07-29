@@ -7,13 +7,13 @@ if (!window.getComputedStyle) {
 }
 // /*explore drop down onclick*/
 function exploreDropDown() {
-  console.log('clicked');
-  const bottomBar = document.getElementById('bottom-bar');
-  if (getComputedStyle(bottomBar).display === 'none') {
-    bottomBar.style.display = 'block';
-  } else {
-    bottomBar.style.display = 'none';
-  }
+  const headerRoot = document.getElementById('new-itp-header');
+  headerRoot.classList.toggle('nav-expanded');
+  headerRoot.classList.toggle('nav-retracted');
+
+  const exploreButton = document.getElementById('explore-button');
+  exploreButton.innerHTML =
+    exploreButton.innerHTML === 'EXIT' ? 'EXPLORE' : 'EXIT';
 }
 
 /*close drop down when clicked other places*/
