@@ -1,1 +1,1 @@
-Navbar with out logo
+Script to inject into department webpages
