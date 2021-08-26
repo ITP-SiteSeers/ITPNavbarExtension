@@ -18,8 +18,8 @@ This is the code for the universal navigation header bar on ITP/IMA/Low Res depa
 2. Download existing index.html
 3. Copy and paste this code into index.html header:
 ```
-<script defer src='https://www.itp.nyu.edu/branding/contentScript.js'></script>
-<link rel='stylesheet' href='https://www.itp.nyu.edu/branding/style.css'>
+<script defer src='https://www.itp.nyu.edu/branding/header/contentScript.js'></script>
+<link rel='stylesheet' href='https://www.itp.nyu.edu/branding/header/style.css'>
 ```
 4. Save file
 5. Upload file back to FTP server
