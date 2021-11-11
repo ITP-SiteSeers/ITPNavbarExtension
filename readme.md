@@ -22,6 +22,10 @@ This is the code for the universal navigation header bar on ITP/IMA/Low Res depa
 2. Download existing index.html
 3. Copy and paste this code into index.html header:
 ```
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54952418-1"></script>
+
+<!-- NYU | TISCH Interactive header  -->
 <script defer src='https://www.itp.nyu.edu/branding/header/contentScript.js'></script>
 <link rel='stylesheet' href='https://www.itp.nyu.edu/branding/header/style.css'>
 ```
