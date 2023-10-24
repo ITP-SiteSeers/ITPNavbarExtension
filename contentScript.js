@@ -223,9 +223,6 @@ const headerDOM = `
   </div>
 ` + (IS_LARGE_MENU ? largeMenu : smallMenu);
 
-
-window.dataLayer = window.dataLayer || [];
-
 // ========================================================
 // Primary Logic
 // ========================================================
@@ -1053,15 +1050,7 @@ function exploreDropDown(e) {
 
 // ========================================================
 // Global site tag (gtag.js) - Google Analytics // ========================================================
-/*function gtag() {
-  dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', 'UA-54952418-1');
-*/
-
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-
 gtag('config', 'UA-54952418-1');
