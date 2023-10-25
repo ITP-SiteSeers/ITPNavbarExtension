@@ -7,7 +7,7 @@ This is the code for the universal navigation header bar on ITP/IMA/Low Res depa
 3. Click 'Add HTML Code' on the top bar
 4. Copy and paste this code:
 ```
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54952418-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-54YGZP2VQT"></script>
 <script defer src='https://www.itp.nyu.edu/branding/header/contentScript.js'></script>
 <link rel='stylesheet' href='https://www.itp.nyu.edu/branding/header/style.css'>
 ```
@@ -19,7 +19,7 @@ This is the code for the universal navigation header bar on ITP/IMA/Low Res depa
 2. Download existing index.html
 3. Copy and paste this code into index.html header:
 ```
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54952418-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-54YGZP2VQT"></script>
 <script defer src='https://www.itp.nyu.edu/branding/header/contentScript.js'></script>
 <link rel='stylesheet' href='https://www.itp.nyu.edu/branding/header/style.css'>
 ```
