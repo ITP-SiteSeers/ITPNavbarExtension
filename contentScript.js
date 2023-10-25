@@ -1053,4 +1053,4 @@ function exploreDropDown(e) {
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'UA-54952418-1');
+gtag('config', 'G-54YGZP2VQT');
