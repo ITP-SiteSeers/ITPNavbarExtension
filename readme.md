@@ -2,7 +2,8 @@
 This is the code for the universal navigation header bar on ITP/IMA/Low Res departmental websites. It lives on the ITP servers at https://www.itp.nyu.edu/branding/header/* and is injected onto each page. The base files can thus be modified on the server and the changes reflected in all associated websites.
 
 ## Installation Instruction for Wordpress:
-1. Install the ITP/IMA Interactive Header plugin, install the zip file on this repo
+1. Install the ITP/IMA Interactive Header plugin. Go to **Plugins**, click on **Add New**, and upload the zip file found on this repo.
+   a. If the website is in a WP multisite, the installation should happen at the network admin level 
 2. Activate the plugin on the WP site
 
 ## Installation Instruction for Vanilla HTML/CSS:
