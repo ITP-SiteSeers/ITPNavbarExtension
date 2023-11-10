@@ -3,8 +3,8 @@ This is the code for the universal navigation header bar on ITP/IMA/Low Res depa
 
 ## Installation Instruction for Wordpress:
 1. Make sure the the *ITP/IMA Interactive Header* is installed.
-   a. Activate the plugin.
-   b. If the website is in a WP multisite, the installation should happen at the network admin level 
+   * Activate the plugin.
+   * If the website is in a WP multisite, the installation should happen at the network admin level 
 3. Activate the plugin on the WP site
 
 ## Installation Instruction for Vanilla HTML/CSS:
