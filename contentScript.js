@@ -253,6 +253,7 @@ try {
   containerNav.prepend(newITPHeader);
   console.log(`🎉 Header appended successfully!`);
 } catch (err) {
+  document.body.prepend(newITPHeader);
   console.log(`❌ ${root} is an invalid root for webpage`);
 }
 
