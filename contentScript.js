@@ -209,14 +209,14 @@ const headerDOM = `
   <div id="top-bar" aria-label="itp header"  onclick="exploreDropDown()">
     <!--img src="https://gist.githubusercontent.com/EthanPrintz/85179b3d35743f2096297982c5aba404/raw/3a09b6b97cd72e9a48b676596aa388cfd1712fe3/TischLogoGrey.svg" id="tisch-logo" alt="Tisch logo"-->
     <div>
-      <img src="https://itp.nyu.edu/branding/header/nyutorch.svg" /> 
+      <img src="https://itp.nyu.edu/branding/header/nyutorch.svg" alt="NYU torch logo"/> 
       <a href="https://www.nyu.edu/"><b>NYU</b></a>
       |
       <a href="https://tisch.nyu.edu/"><b>TISCH</b></a>
     </div>
     <div>
       <button id="explore-button" aria-label="explore button">
-        <img src="https://itp.nyu.edu/branding/header/interactiveLogo.svg" /> 
+        <img src="https://itp.nyu.edu/branding/header/interactiveLogo.svg" alt="NYU TISCH Interactive logo" /> 
       </button>
       <a>INTERACTIVE </a>
     </div>
